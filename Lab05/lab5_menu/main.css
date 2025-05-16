@@ -1,0 +1,55 @@
+.body{
+    font-family: "Roboto", sans-serif;
+}
+.menungang{
+    background-color: aqua;
+    width: 500px;
+    list-style: none;
+    min-height: 30px;
+    display: flex;
+    border-radius: 5px;
+
+   
+}
+.menungang li{
+
+    line-height: 30px;
+    margin-left: 30px;
+    list-style: none;
+}
+.menungang li a{
+    text-decoration: none;
+    
+}
+.menungang li a:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.menudoc{
+    background-color: teal;
+    list-style: none;
+    padding: 0;
+    width: 150px;
+  
+
+}
+.menudoc li{
+    line-height: 30px;
+    height: 40px;
+    border-bottom: solid;
+    
+    
+}
+.menudoc li a{
+   
+    text-decoration: none;
+
+}
+.menudoc :hover{
+    background-color: blue ;
+
+    font-style: italic;
+}
+
+

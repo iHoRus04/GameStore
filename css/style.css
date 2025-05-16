@@ -1,0 +1,300 @@
+body {
+  padding-top: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+  background: #000000;
+
+
+}
+
+
+
+.bg-dark-red {
+  background-color: #000000; /* đen mềm */
+}
+
+.navbar .nav-link {
+  color: #fff!important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fc3838!important;
+}
+
+.navbar-brand {
+   width: 90px;
+  height: 90px;
+  background: url(../img/logo.png) no-repeat center center;
+  background-size: cover;
+  display: inline-block;
+
+}
+
+.navbar-toggler {
+  border-color: #ff3c3c!important;
+}
+
+
+/* Khung banner */
+#banner {
+  max-height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+/* Ảnh banner */
+#banner .carousel-item img {
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Vị trí overlay của form */
+.search-overlay {
+
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.search-form {
+  width: 60%; /* input và button nằm trong khung 60% màn hình */
+  display: flex;
+  justify-content: center;
+}
+
+.search-form input {
+  flex: 1;
+  border-radius: 30px 0 0 30px;
+  padding: 12px 20px;
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #ff3c3c;
+  border-right: none;
+}
+
+.search-form input::placeholder {
+  color: #ccc;
+}
+
+.search-form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff3c3c;
+}
+
+.search-form .btn {
+  border-radius: 0 30px 30px 0;
+  padding: 12px 25px;
+  font-weight: 500;
+  border: 1px solid #ff3c3c;
+  background-color: #ff3c3c;
+  color: white;
+}
+.search-form .btn:hover {
+  background-color: #fc1414;
+  color: #fff;
+}
+
+
+.about-section {
+  background-color: #000000;
+  color: #fff;
+}
+
+.about-section h2 {
+  font-weight: 700;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-section .btn-outline-danger {
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.about-section .btn-outline-danger:hover {
+  background-color: #fc1414;
+  color: #fff;
+}
+
+.game-type-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+   box-shadow: 0 8px 20px rgba(220, 208, 208, 0.05);
+  transition: 0.3s ease;
+}
+
+.game-type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(213, 35, 35, 0.837);
+}
+
+.game-type-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-text{
+  color: #000000;
+}
+.game-type-card .btn {
+  border-radius: 25px;
+  font-weight: 500;
+  padding: 6px 20px;
+  transition: background-color 0.3s;
+}
+
+.game-type-card .btn:hover {
+  background-color: #fc1414;
+  color: rgb(255, 255, 255);
+}
+
+
+.news-card {
+  
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(213, 35, 35, 0.837);
+}
+
+.news-img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.news-card .card-title {
+  font-weight: 600;
+}
+
+.news-card .btn {
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 700px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Dịch vụ */
+.service-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+   transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(255, 60, 60, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-5px)!important;
+  box-shadow: 0 12px 25px rgba(213, 35, 35, 0.837);
+}
+
+.service-card .card-header {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #333;
+}
+
+.service-card .btn {
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.contact-section {
+  background: #f8f9fa;
+}
+
+.contact-info {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.contact-form .btn {
+  border-radius: 25px;
+  padding: 8px 24px;
+  font-weight: 500;
+}
+
+
+section {
+  margin-bottom: 80px;
+}
+#contact {
+  margin-bottom: 0px;
+}
+.bg-ft{
+  background-color: #020202;
+}
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.panel {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.panel-heading,
+.panel-footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.panel-body {
+  padding: 15px;
+}
+

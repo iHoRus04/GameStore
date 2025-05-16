@@ -1,0 +1,410 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Trang chủ</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+    <!-- Navbar -->
+    <nav class="navbar bg-dark-red navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#types">Thể loại</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">Tin tức</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#feedback">Đánh Giá</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="labs.html">Lab</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+     <header id="banner" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="position-relative">
+                    <img src="img/banner.png" class="d-block w-100" alt="Banner 1">
+                    <!-- Form tìm kiếm nổi trên banner -->
+                    <div class="search-overlay d-flex justify-content-center align-items-center">
+                        <form class="form-inline search-form">
+                            <input class="form-control form-control-lg mr-2" type="search"
+                                placeholder="Tìm game yêu thích..." />
+                            <button class="btn btn-danger btn-lg" type="submit">Tìm</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="img/banner2.png" class="d-block w-100" alt="Banner 2">
+                <div class="search-overlay d-flex justify-content-center align-items-center">
+                        <form class="form-inline search-form">
+                            <input class="form-control form-control-lg mr-2 " type="search"
+                                placeholder="Tìm game yêu thích..." />
+                            <button class="btn btn-danger btn-lg" type="submit">Tìm</button>
+                        </form>
+                    </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="img/banner3.png" class="d-block w-100" alt="Banner 3">
+                <div class="search-overlay d-flex justify-content-center align-items-center">
+                        <form class="form-inline search-form">
+                            <input class="form-control form-control-lg mr-2" type="search"
+                                placeholder="Tìm game yêu thích..." />
+                            <button class="btn btn-danger btn-lg" type="submit">Tìm</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Điều hướng carousel -->
+        <a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#banner" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </header>
+
+
+
+
+
+    <!-- About -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-center text-white">
+                    <h2 class="text-danger mb-4">Về GameStore</h2>
+                    <p class="mb-4">GameStore là cửa hàng phân phối game uy tín, mang đến cho cộng đồng game thủ Việt
+                        Nam sự
+                        đa dạng trong thế giới trò chơi. Chúng tôi tự hào là đối tác tin cậy của nhiều nhà phát hành
+                        game
+                        hàng đầu, cung cấp các tựa game từ kinh điển đến mới nhất trên mọi nền tảng.</p>
+                    <a href="about.html" class="btn btn-outline-danger mt-3">Xem thêm</a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="img/aboutImage.png" class="img" alt="About GameStore">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- types -->
+    <section id="types" class="py-5" style="background-color: #000000;">
+        <div class="container">
+            <h2 class="text-center text-danger mb-5 display-4 font-weight-bold">Các thể loại game</h2>
+            <div class="row text-center">
+                <div class="col-md-4  py-3">
+                    <div class="card game-type-card">
+                        <img src="img/typeGameimage.png" class="card-img-top" alt="Game hành động">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">GAME HÀNH ĐỘNG</h5>
+                            <p class="card-text "> Thể loại trò chơi video nhấn mạnh những thách thức về thể
+                                chất, bao
+                                gồm phối hợp mắt - tay và thời gian phản ứng. </p>
+                            <a href="typegame.html" class="btn btn-outline-danger">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4  py-3">
+                    <div class="card game-type-card">
+                        <img src="img/typeGameimage1.png" class="card-img-top" alt="Game thể thao">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">GAME THỂ THAO</h5>
+                            <p class="card-text ">Thể loại trò chơi mà mọi người chơi một
+                                số hoạt động thể chất theo một bộ luật lệ cụ thể và thi đấu với nhau</p>
+                            <a href="typegame.html" class="btn btn-outline-danger">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4  py-3">
+                    <div class="card game-type-card">
+                        <img src="img/typeGameimage2.png" class="card-img-top" alt="Game sinh tồn">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">GAME SINH TỒN</h5>
+                            <p class="card-text "> Một thể loại phụ của trò chơi hành động thường diễn ra
+                                trong môi
+                                trường thế giới mở , khốc liệt , thù địch và cực kì hấp dẫn.</p>
+                            <a href="typegame.html" class="btn btn-outline-danger">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="news" class="container-fluid py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center text-black mb-5 display-4 font-weight-bold">Tin tức nổi bật</h2>
+
+
+            <div class="row g-4">
+                <div class="col-md-4 py-3">
+                    <div class="card news-card h-100">
+                        <img src="img/gameUpdate.png" class="card-img-top news-img" alt="Cập nhật game mới">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Ngày ra mắt của dự kiến của GTA VI </h5>
+                            <p class="card-text">GTA 6 dự kiến sẽ phát hành vào 26 tháng 5 năm 2026 cho PlayStation 5 và
+                                Xbox Series X/Sd</p>
+                            <a href="news.html" class="btn btn-primary w-100">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4  py-3">
+                    <div class="card news-card h-100">
+                        <img src="img/Sale.png" class="card-img-top news-img" alt="Ưu đãi hot">
+                        <div class="card-body">
+                            <h5 class="card-title  text-warning ">Ưu đãi tháng 5: Giảm giá tới 50%</h5>
+                            <p class="card-text">Hơn 100 tựa game đang được khuyến mãi siêu hấp dẫn. Nhanh tay trước khi
+                                hết
+                                hạn!</p>
+                            <a href="news.html" class="btn btn-warning text-white w-100">Xem ưu đãi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4  py-3">
+                    <div class="card news-card h-100">
+                        <img src="img/eventGame.png" class="card-img-top news-img" alt="Sự kiện cộng đồng">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Sự kiện cộng đồng: VTC MOBILE FESTIVAL</h5>
+                            <p class="card-text">VTC Mobile Festival sẽ “mở bát” cho một năm thật nhiều thành công rực
+                                rỡ và phấn khởi</p>
+                            <a href="news.html" class="btn btn-success text-white w-100">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <section id="feedback" class="container py-5 ">
+        <div class="mt-3">
+            <h4 class="text-center mb-4 h3 font-weight-bold text-danger mb-3">Khách hàng nói gì về GameZone?</h4>
+            <div id="reviewsCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
+                <div class="carousel-inner">
+                    <div class="carousel-item animate__animated animate__fadeInUp active">
+                        <div class="card testimonial-card d-flex flex-column align-items-center text-center">
+                            <img src="img/avatar.png" alt="Avatar " class="rounded-circle mb-3" width="80" height="80">
+                            <div class="mb-2">
+                                <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <p class="mb-3 font-italic text-dark">"GameZone hỗ trợ rất nhanh, tôi cảm thấy rất hài lòng với
+                                    dịch vụ ở đây."</p>
+                                <footer class="blockquote-footer">Trung, Cần Thơ</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testimonial-card d-flex flex-column align-items-center text-center">
+                            <img src="img/avatar1.png" alt="Avatar 1" class="rounded-circle mb-3" width="80"
+                                height="80">
+                            <div class="mb-2">
+                                <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <p class="mb-3 font-italic text-dark">"Tôi đã mua nhiều game tại GameZone, giao diện rất dễ sử
+                                    dụng và sản phẩm phong phú."</p>
+                                <footer class="blockquote-footer">Hà, Quảng Ninh</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testimonial-card d-flex flex-column align-items-center text-center">
+                            <img src="img/avatar2.png" alt="Avatar 2" class="rounded-circle mb-3" width="80"
+                                height="80">
+                            <div class="mb-2">
+                                <span class="text-warning">&#9733; &#9733; &#9733; &#9734; &#9734;</span>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <p class="mb-3 font-italic text-dark">"Dịch vụ khá ổn, có thể cải thiện thêm tốc độ phản hồi khi
+                                    có lỗi thanh toán."</p>
+                                <footer class="blockquote-footer">Minh, TP.HCM</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#reviewsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#reviewsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Modal -->
+    <section id="services" class="py-5 mt-5" style="background-color: #000000;">
+        <div class="container">
+            <h2 class="text-center text-danger mb-5 display-4 font-weight-bold">Dịch vụ</h2>
+            <div class="row text-center justify-content-center">
+                <!-- Gói Cơ bản -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card ">
+                        <div class="card-header  text-light font-weight-bold bg-primary">Gói Cơ bản</div>
+                        <div class="card-body ">
+                            <p>Truy cập vào các tựa game phổ thông, giá cả phù hợp với mọi đối tượng.</p>
+                            <button class="btn btn-outline-danger rounded-pill mt-2" data-toggle="modal"
+                                data-target="#orderModal" data-service="Gói Cơ bản">Chọn gói</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói Nâng cao -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card ">
+                        <div class="card-header  text-light font-weight-bold bg-success">Gói Nâng cao</div>
+                        <div class="card-body ">
+                            <p>Thêm quyền truy cập vào các game bản quyền và nhiều tiện ích nâng cao khác.</p>
+                            <button class="btn btn-outline-danger rounded-pill mt-2" data-toggle="modal"
+                                data-target="#orderModal" data-service="Gói Nâng cao">Chọn gói</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói VIP -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card ">
+                        <div class="card-header  text-light font-weight-bold bg-warning">Gói VIP</div>
+                        <div class="card-body ">
+                            <p>Trải nghiệm toàn bộ thư viện game, quyền ưu tiên hỗ trợ và khuyến mãi độc quyền.</p>
+                            <button class="btn btn-outline-danger rounded-pill mt-2" data-toggle="modal"
+                                data-target="#orderModal" data-service="Gói VIP">Chọn gói</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- orderModal.html -->
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content shadow">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="orderModalLabel">Đăng ký dịch vụ</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Đóng">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="orderForm">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="fullName">Họ và tên</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Nhập họ tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email liên hệ</label>
+                            <input type="email" class="form-control" id="email" placeholder="Nhập email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Gói dịch vụ</label>
+                            <input type="text" class="form-control" id="service" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Ghi chú thêm</label>
+                            <textarea class="form-control" id="notes" rows="3"
+                                placeholder="Ví dụ: Thời gian liên hệ, game mong muốn..."></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary w-100">Gửi đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 font-weight-bold">Liên hệ với chúng tôi</h2>
+            <div class="row">
+                <!-- Thông tin công ty -->
+                <div class="col-md-6 contact-info">
+                    <h5>GameStore</h5>
+                    <p><strong>Email:</strong> support@gamezone.vn</p>
+                    <p><strong>Hotline:</strong> 0909 123 456</p>
+                    <p><strong>Địa chỉ:</strong> 123 Nguyễn Văn A, Q.1, TP.HCM</p>
+                    <p><strong>Facebook:</strong> fb.com/gamestore.vn</p>
+                </div>
+
+                <!-- Form liên hệ -->
+                <div class="col-md-6">
+                    <form id="contactForm" class="contact-form shadow">
+                        <div class="form-group">
+                            <label for="contactName">Họ tên</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="Nhập email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Nội dung</label>
+                            <textarea class="form-control" id="contactMessage" rows="4"
+                                placeholder="Viết nội dung..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class=" bg-ft text-light text-center py-3">
+        <p>&copy; 2025 GameStore. All rights reserved - Tống Thới Duy Hùng - DH52200733 - D22_TH04</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

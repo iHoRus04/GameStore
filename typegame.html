@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Game Hành Động - GameStore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #fff;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(255, 60, 60, 0.05);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(225, 18, 18, 0.982);
+    }
+
+    .card-title {
+      color: #ff3c3c;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .card-text {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .btn-danger {
+      background-color: #ff3c3c;
+      border: none;
+      border-radius: 30px;
+      font-weight: 500;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
+
+    .btn-danger:hover {
+      background-color: #e60000;
+    }
+
+    .table-dark {
+      background-color: #2b2b2b;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      margin-top: 15px;
+    }
+
+    .table-dark td {
+      border-top: none;
+      padding: 8px 12px;
+      color: #eee;
+    }
+
+    .table-dark del {
+      color: #888;
+    }
+
+    .video-thumbnail {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .video-thumbnail img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar bg-dark-red navbar-expand-lg navbar-dark  fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#types">Thể loại</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">Tin tức</a></li>
+          <li class="nav-item"><a class="nav-link" href="#feedback">Đánh Giá</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Dịch vụ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+     <!-- Banner -->
+     <header id="banner" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="position-relative">
+                    <img src="img/banner.png" class="d-block w-100" alt="Banner 1">
+                    <!-- Form tìm kiếm nổi trên banner -->
+                    <div class="search-overlay d-flex justify-content-center align-items-center">
+                        <form class="form-inline search-form">
+                            <input class="form-control form-control-lg mr-2" type="search"
+                                placeholder="Tìm game yêu thích..." />
+                            <button class="btn btn-danger btn-lg" type="submit">Tìm</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="img/banner2.png" class="d-block w-100" alt="Banner 2">
+                <div class="search-overlay d-flex justify-content-center align-items-center">
+                        <form class="form-inline search-form">
+                            <input class="form-control form-control-lg mr-2 " type="search"
+                                placeholder="Tìm game yêu thích..." />
+                            <button class="btn btn-danger btn-lg" type="submit">Tìm</button>
+                        </form>
+                    </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="img/banner3.png" class="d-block w-100" alt="Banner 3">
+                <div class="search-overlay d-flex justify-content-center align-items-center">
+                        <form class="form-inline search-form">
+                            <input class="form-control form-control-lg mr-2" type="search"
+                                placeholder="Tìm game yêu thích..." />
+                            <button class="btn btn-danger btn-lg" type="submit">Tìm</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Điều hướng carousel -->
+        <a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#banner" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </header>
+
+
+  <div class="container py-5">
+    <h2 class="text-danger text-center mb-5 display-4 font-weight-bold">Danh sách Game Hành Động</h2>
+    <div class="row">
+      <!-- Game 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="video-thumbnail" data-toggle="modal" data-target="#videoModal"
+            data-video="https://www.youtube.com/embed/qIcTM8WXFjk?si=RUh8Y7ae63xgFvf_">
+            <img src="img/thumbnail.png" alt="Game Thumbnail">
+            <span class="play-btn">&#9658;</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cyberpunk 2077</h5>
+            <p class="card-text flex-grow-1">Cyberpunk 2077 là một trò chơi điện tử nhập vai hành động thế giới mở lấy
+              bối cảnh ở Night City, một siêu đô thị nguy hiểm bị ám ảnh bởi quyền lực, sự quyến rũ và những sửa đổi cơ
+              thể vô tận. Bạn vào vai V, một lính đánh thuê ngoài vòng pháp luật đang theo đuổi một cấy ghép độc nhất vô
+              nhị được cho là chìa khóa để đạt được sự bất tử</p>
+            <table class="table table-dark table-sm">
+              <tr>
+                <td>Giá gốc</td>
+                <td class="text-right"><del>500.000₫</del></td>
+              </tr>
+              <tr>
+                <td>Khuyến mãi</td>
+                <td class="text-right text-danger font-weight-bold">299.000₫</td>
+              </tr>
+            </table>
+            <a href="#" class="btn btn-danger mt-2">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="video-thumbnail" data-toggle="modal" data-target="#videoModal"
+            data-video="https://www.youtube.com/embed/qIcTM8WXFjk?si=RUh8Y7ae63xgFvf_">
+            <img src="img/thumbnail.png" alt="Game Thumbnail">
+            <span class="play-btn">&#9658;</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cyberpunk 2077</h5>
+            <p class="card-text flex-grow-1">Cyberpunk 2077 là một trò chơi điện tử nhập vai hành động thế giới mở lấy
+              bối cảnh ở Night City, một siêu đô thị nguy hiểm bị ám ảnh bởi quyền lực, sự quyến rũ và những sửa đổi cơ
+              thể vô tận. Bạn vào vai V, một lính đánh thuê ngoài vòng pháp luật đang theo đuổi một cấy ghép độc nhất vô
+              nhị được cho là chìa khóa để đạt được sự bất tử</p>
+            <table class="table table-dark table-sm">
+              <tr>
+                <td>Giá gốc</td>
+                <td class="text-right"><del>500.000₫</del></td>
+              </tr>
+              <tr>
+                <td>Khuyến mãi</td>
+                <td class="text-right text-danger font-weight-bold">299.000₫</td>
+              </tr>
+            </table>
+            <a href="#" class="btn btn-danger mt-2">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="video-thumbnail" data-toggle="modal" data-target="#videoModal"
+            data-video="https://www.youtube.com/embed/qIcTM8WXFjk?si=RUh8Y7ae63xgFvf_">
+            <img src="img/thumbnail.png" alt="Game Thumbnail">
+            <span class="play-btn">&#9658;</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cyberpunk 2077</h5>
+            <p class="card-text flex-grow-1">Cyberpunk 2077 là một trò chơi điện tử nhập vai hành động thế giới mở lấy
+              bối cảnh ở Night City, một siêu đô thị nguy hiểm bị ám ảnh bởi quyền lực, sự quyến rũ và những sửa đổi cơ
+              thể vô tận. Bạn vào vai V, một lính đánh thuê ngoài vòng pháp luật đang theo đuổi một cấy ghép độc nhất vô
+              nhị được cho là chìa khóa để đạt được sự bất tử</p>
+            <table class="table table-dark table-sm">
+              <tr>
+                <td>Giá gốc</td>
+                <td class="text-right"><del>500.000₫</del></td>
+              </tr>
+              <tr>
+                <td>Khuyến mãi</td>
+                <td class="text-right text-danger font-weight-bold">299.000₫</td>
+              </tr>
+            </table>
+            <a href="#" class="btn btn-danger mt-2">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="video-thumbnail" data-toggle="modal" data-target="#videoModal"
+            data-video="https://www.youtube.com/embed/qIcTM8WXFjk?si=RUh8Y7ae63xgFvf_">
+            <img src="img/thumbnail.png" alt="Game Thumbnail">
+            <span class="play-btn">&#9658;</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cyberpunk 2077</h5>
+            <p class="card-text flex-grow-1">Cyberpunk 2077 là một trò chơi điện tử nhập vai hành động thế giới mở lấy
+              bối cảnh ở Night City, một siêu đô thị nguy hiểm bị ám ảnh bởi quyền lực, sự quyến rũ và những sửa đổi cơ
+              thể vô tận. Bạn vào vai V, một lính đánh thuê ngoài vòng pháp luật đang theo đuổi một cấy ghép độc nhất vô
+              nhị được cho là chìa khóa để đạt được sự bất tử</p>
+            <table class="table table-dark table-sm">
+              <tr>
+                <td>Giá gốc</td>
+                <td class="text-right"><del>500.000₫</del></td>
+              </tr>
+              <tr>
+                <td>Khuyến mãi</td>
+                <td class="text-right text-danger font-weight-bold">299.000₫</td>
+              </tr>
+            </table>
+            <a href="#" class="btn btn-danger mt-2">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="video-thumbnail" data-toggle="modal" data-target="#videoModal"
+            data-video="https://www.youtube.com/embed/qIcTM8WXFjk?si=RUh8Y7ae63xgFvf_">
+            <img src="img/thumbnail.png" alt="Game Thumbnail">
+            <span class="play-btn">&#9658;</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cyberpunk 2077</h5>
+            <p class="card-text flex-grow-1">Cyberpunk 2077 là một trò chơi điện tử nhập vai hành động thế giới mở lấy
+              bối cảnh ở Night City, một siêu đô thị nguy hiểm bị ám ảnh bởi quyền lực, sự quyến rũ và những sửa đổi cơ
+              thể vô tận. Bạn vào vai V, một lính đánh thuê ngoài vòng pháp luật đang theo đuổi một cấy ghép độc nhất vô
+              nhị được cho là chìa khóa để đạt được sự bất tử</p>
+            <table class="table table-dark table-sm">
+              <tr>
+                <td>Giá gốc</td>
+                <td class="text-right"><del>500.000₫</del></td>
+              </tr>
+              <tr>
+                <td>Khuyến mãi</td>
+                <td class="text-right text-danger font-weight-bold">299.000₫</td>
+              </tr>
+            </table>
+            <a href="#" class="btn btn-danger mt-2">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="video-thumbnail" data-toggle="modal" data-target="#videoModal"
+            data-video="https://www.youtube.com/embed/qIcTM8WXFjk?si=RUh8Y7ae63xgFvf_">
+            <img src="img/thumbnail.png" alt="Game Thumbnail">
+            <span class="play-btn">&#9658;</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cyberpunk 2077</h5>
+            <p class="card-text flex-grow-1">Cyberpunk 2077 là một trò chơi điện tử nhập vai hành động thế giới mở lấy
+              bối cảnh ở Night City, một siêu đô thị nguy hiểm bị ám ảnh bởi quyền lực, sự quyến rũ và những sửa đổi cơ
+              thể vô tận. Bạn vào vai V, một lính đánh thuê ngoài vòng pháp luật đang theo đuổi một cấy ghép độc nhất vô
+              nhị được cho là chìa khóa để đạt được sự bất tử</p>
+            <table class="table table-dark table-sm">
+              <tr>
+                <td>Giá gốc</td>
+                <td class="text-right"><del>500.000₫</del></td>
+              </tr>
+              <tr>
+                <td>Khuyến mãi</td>
+                <td class="text-right text-danger font-weight-bold">299.000₫</td>
+              </tr>
+            </table>
+            <a href="#" class="btn btn-danger mt-2">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thêm nhiều game khác ở đây nếu muốn -->
+    </div>
+  </div>
+
+  <!-- Modal Video -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-dark border-0">
+        <div class="modal-body p-0 position-relative">
+          <button type="button" class="close text-white position-absolute" style="right: 15px; top: 10px;"
+            data-dismiss="modal">&times;</button>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="modalIframe" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class=" bg-ft text-light text-center py-3">
+    <p>&copy; 2025 GameStore. All rights reserved - Tống Thới Duy Hùng - DH52200733 - D22_TH04</p>
+    <a href="#">Facebook</a> | <a href="#">Twitter</a>
+  </footer>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $('#videoModal').on('show.bs.modal', function (e) {
+      const videoSrc = $(e.relatedTarget).data('video');
+      $('#modalIframe').attr('src', videoSrc + '?autoplay=1&rel=0');
+    });
+
+    $('#videoModal').on('hidden.bs.modal', function () {
+      $('#modalIframe').attr('src', '');
+    });
+  </script>
+</body>
+
+</html>
