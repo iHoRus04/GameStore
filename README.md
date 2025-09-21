@@ -1,6 +1,6 @@
 # GameStore
 
-**GameStore** là một website mô phỏng cửa hàng bán game và sách, được xây dựng nhằm mục đích học tập và thực hành các kỹ năng thiết kế web, HTML, CSS, JavaScript, cùng với một số phần mở rộng nâng cao như SCSS và PHP.
+**GameStore** là một website mô phỏng cửa hàng bán game , được xây dựng nhằm mục đích học tập và thực hành các kỹ năng thiết kế web, HTML, CSS, JavaScript, cùng với một số phần mở rộng nâng cao như SCSS và PHP.
 
 ## 🌟 Mục tiêu dự án
 
